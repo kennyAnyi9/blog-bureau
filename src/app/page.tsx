@@ -13,7 +13,7 @@ export default function Home() {
             alt="Login"
           />{" "}
         </div>
-        <div className="text-3xl w-10 h-10 text-white z-10 flex items-center mr-5 justify-center rounded-full ring-1 ring-gray-500">
+        <div className="text-xl w-7 h-7 text-white z-10 flex items-center mr-5 justify-center rounded-full ring-1 ring-gray-500">
           <HiOutlineMenuAlt4 />
         </div>
       </nav>
@@ -43,13 +43,13 @@ export default function Home() {
           <span>Uncover key insights,</span>
           <span>& Elevate your journey</span>
         </p>
-        <div className="flex w-3/5 justify-between mt-10 mb-10">
-          <span>#learn</span>
-          <span>#Discover</span>
-          <span>#Grow</span>
+        <div className="flex w-3/5 text-white justify-between mt-10 mb-10">
+          <p>#Discover</p>
+          <p>#Learn</p>
+          <p>#Grow</p>
         </div>
         <div className="relative flex items-center justify-center w-4/5">
-          <div className="absolute inset-0 top-5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur-xl opacity-50"></div>
+          <div className="absolute -inset-2 top-5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur-xl opacity-50"></div>
           <button
             className=" relative px-3 py-4 bg-black rounded-lg ring-1 ring-pink-600 mt-5 
                         leading-none flex items-center divide-x "

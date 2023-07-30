@@ -87,7 +87,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex bg-black flex-col md:grid  md:grid-cols-2   items-center  mt-20">
+        <div className="flex flex-col md:grid  md:grid-cols-2   items-center  mt-20">
           <div className="flex  flex-col items-center ">
             {" "}
             <Image

@@ -310,7 +310,7 @@ export default function Home() {
               <MdOutlineDarkMode />
               <MdOutlineLightMode />
             </div>
-            <div className="pl-2">
+            <div className="pl-2 text-gray-500">
               <DiGithubBadge />
             </div>
           </div>

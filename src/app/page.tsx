@@ -291,9 +291,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="relative bottom-0 w-full bg-zinc-900  mt-20 ">
+      <footer className="relative bottom-0 w-full bg-zinc-950  mt-10 ">
         <hr />
-        <div className="flex flex-col mt-20 items-center ">
+        <div className="flex flex-col text-gray-300 mt-20 items-center ">
           {" "}
           <Image
             width={40}
@@ -305,8 +305,8 @@ export default function Home() {
           <p>&copy; 2023 Kennedy Inc.</p>
         </div>
         <div className="flex mb-10 flex-col mt-3 items-center">
-          <div className=" flex p-1 divide-x divide-gray-600 space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-white">
-            <div className="flex space-x-2 flex-row">
+          <div className=" flex p-1 divide-x divide-gray-600 space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-gray-500">
+            <div className="flex space-x-2 text-gray-500 flex-row">
               <MdOutlineDarkMode />
               <MdOutlineLightMode />
             </div>

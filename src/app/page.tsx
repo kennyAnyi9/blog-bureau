@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 export default function Home() {
   return (
-    <div className=" bg-black flex flex-col justify-center items-center  h-full">
+    <div className=" bg-black flex flex-col justify-center items-center  h-fit">
       <nav className="w-full md:w-3/5 h-28 relative   flex flex-row items-center  justify-between ">
         <div className="flex flex-row w-1/3 mx-5">
           {" "}

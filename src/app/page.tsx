@@ -3,10 +3,16 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { FcAlarmClock, FcBullish, FcMindMap, FcOrgUnit } from "react-icons/fc";
 import { DiGithubBadge } from "react-icons/di";
+import {
+  MdOutlineLightMode,
+  MdDarkMode,
+  MdNightlightRound,
+  MdOutlineDarkMode,
+} from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className=" bg-black flex flex-col justify-center items-center  h-fit">
+    <div className="relative bg-black flex flex-col items-center  min-h-screen ">
       <nav className="w-full md:w-3/5 h-28 relative   flex flex-row items-center  justify-between ">
         <div className="flex flex-row w-1/3 mx-5">
           {" "}
@@ -34,7 +40,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="flex  flex-col h-screen items-center mt-10 md:mt-20 w-4/5 md:w-3/5">
+      <div className="flex  flex-col  items-center mt-10 md:mt-20 w-4/5 md:w-3/5">
         {" "}
         <div className="flex flex-col lg:flex-row">
           <h1
@@ -284,25 +290,32 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col mt-20 ">
-          <div className="flex flex-row">
-            {" "}
-            <Image
-              width={40}
-              height={40}
-              src="/images/Bd-1-white.png"
-              alt="Login"
-            />{" "}
-            <p className="font-bold m-2">Blog Bureau</p>
-          </div>
-          <div>
-            <p>@ 2023 Kennedy Inc</p>
-          </div>
-          <div className="text-2xl">
-            <DiGithubBadge />
+      </div>
+      <footer className="relative bottom-0 w-full bg-zinc-900  mt-20 ">
+        <hr />
+        <div className="flex flex-col mt-20 items-center ">
+          {" "}
+          <Image
+            width={40}
+            height={40}
+            src="/images/Bd-1-white.png"
+            alt="Login"
+          />{" "}
+          <p className="font-bold m-2">Blog Bureau</p>
+          <p>&copy; 2023 Kennedy Inc.</p>
+        </div>
+        <div className="flex mb-10 flex-col mt-3 items-center">
+          <div className=" flex p-1 divide-x divide-gray-600 space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-white">
+            <div className="flex space-x-2 flex-row">
+              <MdOutlineDarkMode />
+              <MdOutlineLightMode />
+            </div>
+            <div className="pl-2">
+              <DiGithubBadge />
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }

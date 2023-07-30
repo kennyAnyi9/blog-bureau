@@ -3,16 +3,11 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { FcAlarmClock, FcBullish, FcMindMap, FcOrgUnit } from "react-icons/fc";
 import { DiGithubBadge } from "react-icons/di";
-import {
-  MdOutlineLightMode,
-  MdDarkMode,
-  MdNightlightRound,
-  MdOutlineDarkMode,
-} from "react-icons/md";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className="relative bg-black flex flex-col items-center  min-h-screen ">
+    <div className="relative   bg-black flex flex-col items-center  min-h-screen ">
       <nav className="w-full md:w-3/5 h-28 relative   flex flex-row items-center  justify-between ">
         <div className="flex flex-row w-1/3 mx-5">
           {" "}
@@ -292,7 +287,8 @@ export default function Home() {
         </div>
       </div>
       <footer className="relative bottom-0 w-full bg-zinc-950  mt-10 ">
-        <hr />
+        <div className="border-t border-gray-600"></div>
+
         <div className="flex flex-col text-gray-400 mt-20 items-center ">
           {" "}
           <Image

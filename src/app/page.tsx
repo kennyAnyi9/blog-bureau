@@ -8,7 +8,7 @@ import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 export default function Home() {
   return (
     <div className="relative   bg-black flex flex-col items-center  min-h-screen ">
-      <nav className="w-full md:w-3/5 h-28 relative   flex flex-row items-center  justify-between ">
+      <nav className="w-full z-10 backdrop-filter backdrop-blur-md bg-opacity-50 fixed md:w-3/5 h-20 bg-black   flex flex-row items-center  justify-between ">
         <div className="flex flex-row w-1/3 mx-5">
           {" "}
           <Image
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="flex  flex-col  items-center mt-10 md:mt-20 w-4/5 md:w-3/5">
+      <div className="flex  flex-col relative top-20 h-fit mb-28  items-center mt-10 md:mt-20 w-4/5 md:w-3/5">
         {" "}
         <div className="flex flex-col lg:flex-row">
           <h1

@@ -293,7 +293,7 @@ export default function Home() {
       </div>
       <footer className="relative bottom-0 w-full bg-zinc-950  mt-10 ">
         <hr />
-        <div className="flex flex-col text-gray-300 mt-20 items-center ">
+        <div className="flex flex-col text-gray-400 mt-20 items-center ">
           {" "}
           <Image
             width={40}

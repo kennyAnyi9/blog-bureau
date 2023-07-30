@@ -1,13 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import {
-  FcAlarmClock,
-  FcBullish,
-  FcMindMap,
-  FcOrgUnit,
-  FcRadarPlot,
-} from "react-icons/fc";
+import { FcAlarmClock, FcBullish, FcMindMap, FcOrgUnit } from "react-icons/fc";
+import { DiGithubBadge } from "react-icons/di";
+
 export default function Home() {
   return (
     <div className=" bg-black flex flex-col justify-center items-center  h-fit">
@@ -271,7 +267,7 @@ export default function Home() {
             <div className="m-7">
               <h1
                 className="text-2xl mb-5 font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r from-pink-400 to-pink-600 "
+                    bg-gradient-to-r from-orange-600 to-orange-900 "
               >
                 Time Management
               </h1>
@@ -286,6 +282,24 @@ export default function Home() {
                 life through our thought-provoking materials.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-col mt-20 ">
+          <div className="flex flex-row">
+            {" "}
+            <Image
+              width={40}
+              height={40}
+              src="/images/Bd-1-white.png"
+              alt="Login"
+            />{" "}
+            <p className="font-bold m-2">Blog Bureau</p>
+          </div>
+          <div>
+            <p>@ 2023 Kennedy Inc</p>
+          </div>
+          <div className="text-2xl">
+            <DiGithubBadge />
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 export default function Home() {
   return (
-    <div className=" bg-black flex flex-col justify-center items-center  h-screen">
+    <div className=" bg-black flex flex-col justify-center items-center  h-full">
       <nav className="w-full md:w-3/5 h-28 relative   flex flex-row items-center  justify-between ">
         <div className="flex flex-row w-1/3 mx-5">
           {" "}
@@ -86,6 +86,77 @@ export default function Home() {
               </span>
             </button>
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center  md:w-3/4">
+        <div className="flex w-3/5 flex-col items-center ">
+          {" "}
+          <Image
+            width={40}
+            height={40}
+            src="/images/discover.png"
+            alt="Login"
+            className="rounded-md"
+          />{" "}
+          <h1
+            className="font-bold shadow-xl mt-5 text-2xl
+                    text-transparent bg-clip-text
+                    bg-gradient-to-r from-blue-800 to-emerald-700
+                    text-center"
+          >
+            Discover
+          </h1>
+          <p className="text-center mt-5 text-gray-600 text-lg">
+            unleash the power of knowledge in Neurology and Psychlogy. The power
+            of the subconscious mind, neurotransmiters and brain functioning{" "}
+          </p>
+        </div>
+
+        <div className="flex w-3/5 mt-20 flex-col items-center">
+          {" "}
+          <Image
+            width={40}
+            height={40}
+            src="/images/learn1.png"
+            alt="Login"
+            className="rounded-md"
+          />{" "}
+          <h1
+            className="font-bold shadow-xl mt-5 text-2xl
+                    text-transparent bg-clip-text
+                    bg-gradient-to-r from-purple-600 to-pink-800
+                    text-center"
+          >
+            Learn
+          </h1>
+          <p className="text-center mt-5 text-gray-600 text-lg">
+            unleash the power of knowledge in Neurology and Psychlogy. The power
+            of the subconscious mind, neurotransmiters and brain functioning{" "}
+          </p>
+        </div>
+
+        <div className="flex w-3/5 mt-20 flex-col items-center">
+          {" "}
+          <Image
+            width={40}
+            height={40}
+            src="/images/grow.png"
+            alt="Login"
+            className="rounded-md"
+          />{" "}
+          <h1
+            className="font-bold shadow-xl mt-5 text-2xl
+                    text-transparent bg-clip-text
+                    bg-gradient-to-r from-orange-700 to-orange-400
+                    text-center"
+          >
+            Grow
+          </h1>
+          <p className="text-center mt-5 text-gray-600 text-lg">
+            unleash the power of knowledge in Neurology and Psychlogy. The power
+            of the subconscious mind, neurotransmiters and brain functioning{" "}
+          </p>
         </div>
       </div>
     </div>

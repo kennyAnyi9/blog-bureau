@@ -104,7 +104,7 @@ export default function Home() {
           <div className="relative flex items-center justify-center w-64">
             <div className="absolute -inset-2 top-5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur-xl opacity-50"></div>
             <button
-              className=" relative px-3 py-3 bg-balck bg-white dark:bg-black rounded-lg ring-1 ring-pink-600 mt-5 
+              className=" relative px-3 py-3 bg-balck bg-white dark:bg-black hover:bg-gradient-to-r  dark:hover:bg-gradient-to-r from-purple-600 to-pink-600  rounded-lg ring-1 ring-pink-600 mt-5 
                         leading-none flex items-center divide-x "
             >
               <span className="px-20 md:px-8  flex items-center space-x-2">
@@ -386,7 +386,7 @@ export default function Home() {
           <p>&copy; 2023 Kennedy Inc.</p>
         </div>
         <div className="flex mb-10 flex-col mt-3 items-center">
-          <div className=" flex p-1 divide-x divide-gray-600 space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-gray-500">
+          <div className=" flex p-1 cursor-pointer divide-x divide-gray-600 space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-gray-500">
             <div className="flex space-x-2 text-black dark:text-gray-500 flex-row">
               <MdOutlineDarkMode onClick={() => setTheme("dark")} />
 

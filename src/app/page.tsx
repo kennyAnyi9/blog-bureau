@@ -53,7 +53,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="text-xl w-7 h-7 md:hidden text-white z-10 flex items-center mr-5 justify-center rounded-full ring-1 ring-gray-500">
+        <div className="text-xl w-7 h-7 md:hidden text-black dark:text-white z-10 flex items-center mr-5 justify-center rounded-full ring-1 ring-gray-500">
           <HiOutlineMenuAlt4 />
         </div>
       </nav>
@@ -363,28 +363,36 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="relative bottom-0 w-full bg-zinc-950  mt-10 ">
+      <footer className="relative bottom-0 w-full bg-gray-50 dark:bg-zinc-950  mt-10 ">
         <div className="border-t border-gray-600"></div>
 
-        <div className="flex flex-col text-gray-400 mt-20 items-center ">
-          {" "}
-          <Image
-            width={40}
-            height={40}
-            src="/images/Bd-1-white.png"
-            alt="Login"
-          />{" "}
+        <div className="flex flex-col text-black dark:text-gray-400 mt-20 items-center ">
+          {theme === "dark" ? (
+            <Image
+              width={40}
+              height={40}
+              src="/images/Bd-1-white.png"
+              alt="Login"
+            />
+          ) : (
+            <Image
+              width={40}
+              height={40}
+              src="/images/Bd-1-black.png"
+              alt="Login"
+            />
+          )}
           <p className="font-bold m-2">Blog Bureau</p>
           <p>&copy; 2023 Kennedy Inc.</p>
         </div>
         <div className="flex mb-10 flex-col mt-3 items-center">
           <div className=" flex p-1 divide-x divide-gray-600 space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-gray-500">
-            <div className="flex space-x-2 text-gray-500 flex-row">
+            <div className="flex space-x-2 text-black dark:text-gray-500 flex-row">
               <MdOutlineDarkMode onClick={() => setTheme("dark")} />
 
               <MdOutlineLightMode onClick={() => setTheme("white")} />
             </div>
-            <div className="pl-2 text-gray-500">
+            <div className="pl-2 text-black dark:text-gray-500">
               <DiGithubBadge />
             </div>
           </div>

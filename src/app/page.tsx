@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="flex  flex-col relative top-20 h-fit mb-28  items-center mt-10 md:mt-20 w-4/5 md:w-3/5">
+      <div className="flex  flex-col relative top-20 h-fit mb-28  items-center mt-10 md:mt-20 w-5/6 md:w-3/5">
         {" "}
         <div className="flex flex-col lg:flex-row">
           <h1

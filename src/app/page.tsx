@@ -4,12 +4,13 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { FcAlarmClock, FcBullish, FcMindMap, FcOrgUnit } from "react-icons/fc";
 import { DiGithubBadge } from "react-icons/di";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { BsFillRocketTakeoffFill, BsStars } from "react-icons/bs";
 
 export default function Home() {
   return (
     <div className="relative   bg-black flex flex-col items-center  min-h-screen ">
       <nav className="w-full z-10 backdrop-filter backdrop-blur-md bg-opacity-50 fixed md:w-3/5 h-20 bg-black   flex flex-row items-center  justify-between ">
-        <div className="flex flex-row w-1/3 mx-5">
+        <div className="flex flex-row w-1/3 mx-5 lg:mx-0">
           {" "}
           <Image
             width={50}
@@ -29,7 +30,14 @@ export default function Home() {
             /portfolio
           </Link>
         </div>
-        <div className="hidden md:flex flex-row justify-around w-1/3  "></div>
+        <div className="hidden md:flex flex-row justify-around w-1/3  ">
+          <div className=" flex p-1 divide-x divide-white space-x-2 flex-row text-2xl w-fit h-fit rounded-2xl ring-1 ring-gray-500">
+            <div className="flex space-x-2 text-white flex-row">
+              <MdOutlineDarkMode />
+              <MdOutlineLightMode />
+            </div>
+          </div>
+        </div>
         <div className="text-xl w-7 h-7 md:hidden text-white z-10 flex items-center mr-5 justify-center rounded-full ring-1 ring-gray-500">
           <HiOutlineMenuAlt4 />
         </div>
@@ -86,25 +94,21 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col md:grid  md:grid-cols-2   items-center  mt-20">
+        <div className="flex flex-col   items-center  mt-36">
           <div className="flex  flex-col items-center ">
             {" "}
-            <Image
-              width={40}
-              height={40}
-              src="/images/discover.png"
-              alt="Login"
-              className="rounded-md"
-            />{" "}
+            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-r  from-blue-600 to-blue-400">
+              <h1 className="text-black font-extrabold">1</h1>
+            </div>
             <h1
-              className="font-bold shadow-xl mt-5 text-2xl
+              className="font-bold shadow-xl mt-5 text-4xl
                     text-transparent bg-clip-text
-                    bg-gradient-to-r from-blue-800 to-emerald-700
+                    bg-gradient-to-r from-blue-600 to-blue-400
                     text-center"
             >
               Discover
             </h1>
-            <p className="text-center mt-5 text-gray-600 text-lg">
+            <p className="text-center mt-5 text-gray-200 text-xl">
               Explore the boundless potential of understanding in Neurology and
               Psychology, encompassing the influence of the subconscious mind,
               neurotransmitters, and brain functionality.{" "}
@@ -113,22 +117,18 @@ export default function Home() {
 
           <div className="flex  mt-20 flex-col items-center">
             {" "}
-            <Image
-              width={40}
-              height={40}
-              src="/images/learn1.png"
-              alt="Login"
-              className="rounded-md"
-            />{" "}
+            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-r  from-purple-600 to-pink-800">
+              <h1 className="text-black font-extrabold">2</h1>
+            </div>
             <h1
-              className="font-bold shadow-xl mt-5 text-2xl
+              className="font-bold shadow-xl mt-5 text-4xl
                     text-transparent bg-clip-text
                     bg-gradient-to-r from-purple-600 to-pink-800
                     text-center"
             >
               Learn
             </h1>
-            <p className="text-center mt-5 text-gray-600 text-lg">
+            <p className="text-center mt-5 text-gray-200 text-xl">
               Embark on a journey of continuous learning and personal
               development. Uncover the fascinating realms of Neurology and
               Psychology, delving into the intricate workings of the
@@ -139,22 +139,18 @@ export default function Home() {
 
           <div className="flex  mt-20 flex-col items-center">
             {" "}
-            <Image
-              width={40}
-              height={40}
-              src="/images/grow.png"
-              alt="Login"
-              className="rounded-md"
-            />{" "}
+            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-r  from-orange-700 to-orange-400">
+              <h1 className="text-black font-extrabold">3</h1>
+            </div>
             <h1
-              className="font-bold shadow-xl mt-5 text-2xl
+              className="font-bold shadow-xl mt-5 text-4xl
                     text-transparent bg-clip-text
                     bg-gradient-to-r from-orange-700 to-orange-400
                     text-center"
             >
               Grow
             </h1>
-            <p className="text-center mt-5 text-gray-600 text-lg">
+            <p className="text-center  mt-5 text-gray-200 text-xl">
               Nurture your personal growth and evolution. Unlock the potential
               within yourself as you explore the realms of Neurology and
               Psychology. Discover the profound impact of the subconscious mind,
@@ -193,8 +189,8 @@ export default function Home() {
             transform your journey of personal growth and development
           </p>
         </div>
-        <div className="grid mt-20 grid-cols-1 space-y-5 md:grid-cols-2  w-full ">
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-2 ring-gray-600 rounded-xl">
+        <div className="flex mt-20 flex-wrap space-y-10  items-center justify-around   w-full ">
+          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
             <div className="text-5xl ml-7 mt-7">
               <FcMindMap />
             </div>
@@ -216,7 +212,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-2 ring-gray-600 rounded-xl">
+          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
             <div className="text-5xl ml-7 mt-7">
               <FcBullish />
             </div>
@@ -238,7 +234,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-2 ring-gray-600 rounded-xl">
+          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
             <div className="text-5xl ml-7 mt-7">
               <FcOrgUnit />
             </div>
@@ -261,7 +257,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-2 ring-gray-600 rounded-xl">
+          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
             <div className="text-5xl ml-7 mt-7">
               <FcAlarmClock />
             </div>
@@ -282,6 +278,65 @@ export default function Home() {
                 to mastering your schedule and embracing a balanced, fulfilling
                 life through our thought-provoking materials.
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-20 w-full ">
+          {/* comment out the horizontal line breaking the two sessions */}
+          {/* <div className="border-t border-gray-600   "></div> */}
+          <div>
+            {" "}
+            <h1
+              className="text-7xl text-center  font-bold text-transparent bg-clip-text
+                    bg-gradient-to-r from-blue-600 to-blue-400 mt-20 mb-28"
+            >
+              Featured Books
+              <span className="block text-xl  text-gray-300 mt-2">
+                Discover our collection of powerful book summaries and personal
+                reflections on a wide range of topics. From self-development to
+                neuroscience, we have curated a selection of thought-provoking
+                reads to inspire and empower you on your journey of growth and
+                learning.
+              </span>
+            </h1>
+          </div>
+          <div className=" w-full lg:w-1/2 rounded-xl h-fit bg-zinc-950 ring-2 ring-zinc-950 flex flex-col">
+            <div className="flex justify-center items-center">
+              <Image
+                layout="responsive"
+                objectFit="contain"
+                height={100}
+                width={100}
+                src="/images/habits.jpg"
+                alt="Login"
+                className="rounded-t-xl"
+              />{" "}
+            </div>
+            <div className="p-10 space-y-10">
+              <h1
+                className="font-bold text-2xl text-transparent bg-clip-text
+                    bg-gradient-to-r from-blue-600 to-blue-400"
+              >
+                Atomic Habits - James Clear
+              </h1>
+              <h1 className="flex flex-row justify-between text-lg font-bold">
+                Powerful Insights
+                <span className="flex flex-row text-2xl text-yellow-500">
+                  <BsStars />
+                  <BsStars />
+                  <BsStars />
+                  <BsStars />
+                </span>
+              </h1>
+              <div className="text-gray-300">
+                James Clear presents practical strategies for creating positive
+                habits and breaking free from negative ones. By understanding
+                the science behind habit formation, readers can make incremental
+                changes that lead to significant personal growth and success.
+              </div>
+              <button className="rounded-3xl bg-blue-700 px-5 py-2 drop-shadow-md shadow-xl">
+                Start Reading
+              </button>
             </div>
           </div>
         </div>

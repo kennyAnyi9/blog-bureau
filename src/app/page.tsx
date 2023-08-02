@@ -241,8 +241,11 @@ export default function Home() {
             transform your journey of personal growth and development
           </p>
         </div>
-        <div className="flex mt-20 flex-wrap space-y-10  items-center justify-around   w-full ">
-          <div ref={ref}>
+        <div
+          ref={ref}
+          className="flex mt-20 flex-wrap space-y-10  items-center justify-around   w-full "
+        >
+          <div>
             {" "}
             <motion.div
               className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl"

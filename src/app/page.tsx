@@ -7,9 +7,33 @@ import { DiGithubBadge } from "react-icons/di";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { BsStars } from "react-icons/bs";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: "-100vw" });
+    }
+  }, [inView]);
   return (
     <div className="relative    flex flex-col items-center  min-h-screen ">
       <nav className="w-full z-10 backdrop-filter backdrop-blur-md bg-opacity-50 fixed lg:w-3/5 h-20 dark:bg-black   flex flex-row items-center  justify-between ">
@@ -59,7 +83,12 @@ export default function Home() {
       </nav>
 
       <div className="flex  flex-col relative top-20 h-fit mb-28  items-center mt-10 md:mt-20 w-11/12 md:w-3/5">
-        <div className="flex flex-col lg:flex-row">
+        <motion.div
+          className="flex flex-col lg:flex-row"
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+        >
           <h1
             className="text-7xl  font-extrabold dark:shadow-xl
                      bg-clip-text dark:text-white
@@ -79,7 +108,7 @@ export default function Home() {
           >
             Bureau.
           </h1>
-        </div>
+        </motion.div>
         <div className="w-full">
           <p className="flex text-xl flex-col text-center text-gray-700 dark:text-gray-400 mt-10">
             Unleash the power of books through powerful summaries, life changing
@@ -213,29 +242,38 @@ export default function Home() {
           </p>
         </div>
         <div className="flex mt-20 flex-wrap space-y-10  items-center justify-around   w-full ">
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
-            <div className="text-5xl ml-7 mt-7">
-              <FcMindMap />
-            </div>
-            <div className="m-7">
-              <h1
-                className="text-2xl mb-5 font-bold text-transparent bg-clip-text 
+          <div ref={ref}>
+            {" "}
+            <motion.div
+              className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl"
+              animate={animation}
+            >
+              <div className="text-5xl ml-7 mt-7">
+                <FcMindMap />
+              </div>
+              <div className="m-7">
+                <h1
+                  className="text-2xl mb-5 font-bold text-transparent bg-clip-text 
                     bg-gradient-to-r from-blue-700 to-emerald-900 "
-              >
-                Self Discipline
-              </h1>
-              <p className="text-black dark:text-gray-400">
-                {" "}
-                Embark on a transformative journey to master self-discipline.
-                Gain valuable insights, practical tips, and introspective
-                reflections to build healthy habits, conquer procrastination,
-                and foster unwavering determination. Unlock your inner power,
-                embrace personal growth, and achieve success with our
-                thought-provoking content.
-              </p>
-            </div>
+                >
+                  Self Discipline
+                </h1>
+                <p className="text-black dark:text-gray-400">
+                  {" "}
+                  Embark on a transformative journey to master self-discipline.
+                  Gain valuable insights, practical tips, and introspective
+                  reflections to build healthy habits, conquer procrastination,
+                  and foster unwavering determination. Unlock your inner power,
+                  embrace personal growth, and achieve success with our
+                  thought-provoking content.
+                </p>
+              </div>
+            </motion.div>
           </div>
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
+          <motion.div
+            className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl"
+            animate={animation}
+          >
             <div className="text-5xl ml-7 mt-7">
               <FcBullish />
             </div>
@@ -256,8 +294,11 @@ export default function Home() {
                 thought-provoking content.
               </p>
             </div>
-          </div>
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
+          </motion.div>
+          <motion.div
+            className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl"
+            animate={animation}
+          >
             <div className="text-5xl ml-7 mt-7">
               <FcOrgUnit />
             </div>
@@ -279,8 +320,11 @@ export default function Home() {
                 thought-provoking materials.
               </p>
             </div>
-          </div>
-          <div className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl">
+          </motion.div>
+          <motion.div
+            className=" flex flex-col w-full  md:w-96 h-fit  ring-1 ring-gray-600 rounded-xl"
+            animate={animation}
+          >
             <div className="text-5xl ml-7 mt-7">
               <FcAlarmClock />
             </div>
@@ -302,7 +346,7 @@ export default function Home() {
                 life through our thought-provoking materials.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="mt-20 w-full ">
           {/* comment out the horizontal line breaking the two sessions */}

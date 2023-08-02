@@ -335,7 +335,7 @@ export default function Home() {
                 className="rounded-t-xl"
               />{" "}
             </div>
-            <div className="p-7 md:p-10 space-y-10">
+            <div className="p-5 md:p-10 space-y-10">
               <h1
                 className="font-bold text-2xl text-transparent bg-clip-text
                     bg-gradient-to-r from-blue-800 to-blue-500"
@@ -349,7 +349,7 @@ export default function Home() {
                 the science behind habit formation, readers can make incremental
                 changes that lead to significant personal growth and success.
               </div>
-              <button className="rounded-3xl float-right  dark:ring-blue-700 transition duration-150 ease-in-out bg-gradient-to-r from-blue-800 to-blue-700 hover:bg-blue-500 px-5 py-2 drop-shadow-md shadow-xl">
+              <button className="rounded-3xl float-right  text-white dark:text-black transition duration-150 ease-in-out bg-gradient-to-r from-blue-800 to-blue-700 hover:bg-blue-500 px-5 py-2 drop-shadow-md shadow-xl">
                 Start Reading
               </button>
             </div>

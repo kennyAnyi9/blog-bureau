@@ -25,8 +25,7 @@ export default function Home() {
         x: 0,
         transition: {
           type: "spring",
-          duration: 1,
-          bounce: 0.3,
+          duration: 2,
         },
       });
     }
@@ -87,7 +86,7 @@ export default function Home() {
           className="flex flex-col lg:flex-row"
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+          transition={{ type: "spring", duration: 2, bounce: 0.1 }}
         >
           <h1
             className="text-7xl  font-extrabold dark:shadow-xl

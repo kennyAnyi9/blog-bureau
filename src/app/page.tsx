@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col   items-center  mt-36">
-          <div className="flex  flex-col items-center ">
+          <div className="flex w-2/3 flex-col items-center ">
             {" "}
             <div className="w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-r  from-blue-600 to-blue-400">
               <h1 className="text-black font-extrabold">1</h1>
@@ -136,7 +136,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex  mt-20 flex-col items-center">
+          <div className="flex w-2/3 mt-20 flex-col items-center">
             {" "}
             <div className="w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-r  from-purple-600 to-pink-800">
               <h1 className="text-black font-extrabold">2</h1>
@@ -158,7 +158,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex  mt-20 flex-col items-center">
+          <div className="flex w-2/3  mt-20 flex-col items-center">
             {" "}
             <div className="w-10 h-10 rounded-full flex justify-center items-center bg-gradient-to-r  from-orange-700 to-orange-400">
               <h1 className="text-black font-extrabold">3</h1>
@@ -184,7 +184,7 @@ export default function Home() {
         </div>
         <div className="mt-20 ">
           <h1
-            className="text-5xl text-center lg:text-center text-black dark:text-white  font-bold bg-clip-text
+            className=" text-4xl md:text-5xl text-center lg:text-center text-black dark:text-white  font-bold bg-clip-text
                     "
           >
             Powerful Book{" "}

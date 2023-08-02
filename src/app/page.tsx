@@ -1,11 +1,9 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
+
 import { FcAlarmClock, FcBullish, FcMindMap, FcOrgUnit } from "react-icons/fc";
 import { DiGithubBadge } from "react-icons/di";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
-
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -35,8 +33,8 @@ export default function Home() {
     }
   }, [inView]);
   return (
-    <div className="relative w-screen   flex flex-col items-center  min-h-screen ">
-      <Nav />
+    <div className="flex flex-col items-center  min-h-screen ">
+     
       <div className="flex  flex-col relative top-20 h-fit mb-28  items-center mt-10 md:mt-20 w-11/12 md:w-3/5">
         <motion.div
           className="flex flex-col lg:flex-row"

@@ -59,7 +59,6 @@ export default function Home() {
       </nav>
 
       <div className="flex  flex-col relative top-20 h-fit mb-28  items-center mt-10 md:mt-20 w-11/12 md:w-3/5">
-        {" "}
         <div className="flex flex-col lg:flex-row">
           <h1
             className="text-7xl  font-extrabold dark:shadow-xl
@@ -196,7 +195,7 @@ export default function Home() {
             >
               Summaries{" "}
             </span>
-            <span className="text-black dark:text-white">and </span>
+            <span className="text-black dark:text-white">& </span>
             <span
               className="text-transparent bg-clip-text 
                     bg-gradient-to-t from-blue-700 to-pink-600"
@@ -322,7 +321,7 @@ export default function Home() {
               </span>
             </h1>
           </div>
-          <div className=" w-full lg:w-1/2 rounded-xl h-fit bg-gray-200  dark:bg-zinc-950 dark:ring-2 ring-zinc-950 flex flex-col">
+          <div className=" w-full lg:w-1/2 rounded-xl h-fit bg-gray-200  dark:bg-zinc-900 dark:ring-2 ring-zinc-950 flex flex-col">
             <div className="flex justify-center items-center">
               <Image
                 layout="responsive"

@@ -7,7 +7,7 @@ import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 export const Nav = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <nav className="w-screen z-10 backdrop-filter backdrop-blur-md bg-opacity-50 fixed lg:w-3/5 h-20 dark:bg-black   flex flex-row items-center  justify-between ">
+    <nav className="w-screen z-10 backdrop-filter backdrop-blur-md bg-opacity-50 fixed lg:w-3/5 h-20 dark:bg-black  flex flex-row items-center  justify-between ">
       <div className="flex flex-row w-1/3 mx-5  lg:mx-0">
         {" "}
         {theme === "dark" ? (

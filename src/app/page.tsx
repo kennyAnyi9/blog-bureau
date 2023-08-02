@@ -195,7 +195,9 @@ export default function Home() {
             >
               Summaries{" "}
             </span>
+            <br className="md:hidden" />
             <span className="text-black dark:text-white">& </span>
+            <br className="md:hidden" />
             <span
               className="text-transparent bg-clip-text 
                     bg-gradient-to-t from-blue-700 to-pink-600"
@@ -308,11 +310,11 @@ export default function Home() {
           <div>
             {" "}
             <h1
-              className="text-7xl text-center  font-bold text-transparent bg-clip-text
+              className=" text-5xl md:text-6xl lg:text-7xl text-center  font-bold text-transparent bg-clip-text
                     bg-gradient-to-r from-blue-800 to-blue-500 mt-20 mb-28"
             >
               Featured Books
-              <span className="block text-xl  text-black dark:text-gray-300 mt-10">
+              <span className="block font-medium text-xl  text-black dark:text-gray-300 mt-10">
                 Discover our collection of powerful book summaries and personal
                 reflections on a wide range of topics. From self-development to
                 neuroscience, we have curated a selection of thought-provoking
@@ -333,29 +335,21 @@ export default function Home() {
                 className="rounded-t-xl"
               />{" "}
             </div>
-            <div className="p-10 space-y-10">
+            <div className="p-7 md:p-10 space-y-10">
               <h1
                 className="font-bold text-2xl text-transparent bg-clip-text
                     bg-gradient-to-r from-blue-800 to-blue-500"
               >
                 Atomic Habits - James Clear
               </h1>
-              <h1 className="flex flex-row justify-between text-lg font-bold">
-                Powerful Insights
-                {/* <span className="flex flex-row text-2xl text-yellow-500">
-                  <BsStars />
-                  <BsStars />
-                  <BsStars />
-                  <BsStars />
-                </span> */}
-              </h1>
-              <div className=" text-black dark:text-gray-300 text-justify">
+
+              <div className=" text-black dark:text-gray-300 text-left">
                 James Clear presents practical strategies for creating positive
                 habits and breaking free from negative ones. By understanding
                 the science behind habit formation, readers can make incremental
                 changes that lead to significant personal growth and success.
               </div>
-              <button className="rounded-3xl ring-1  dark:ring-blue-700 transition duration-150 ease-in-out hover:bg-blue-600 px-5 py-2 drop-shadow-md shadow-xl">
+              <button className="rounded-3xl float-right  dark:ring-blue-700 transition duration-150 ease-in-out bg-gradient-to-r from-blue-800 to-blue-700 hover:bg-blue-500 px-5 py-2 drop-shadow-md shadow-xl">
                 Start Reading
               </button>
             </div>
